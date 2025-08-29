@@ -15,7 +15,7 @@
 </template>
 <script setup>
 import ProductList from "./components/icons/ProductList.vue";
-import Cart from "./components/icons/Cart.vue";
+import Cart from "./components/icons/CartList.vue";
 import NotificationMessage from "./components/icons/NotificationMessage.vue";
 import { computed, provide, reactive, ref } from "vue";
 
