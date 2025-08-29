@@ -2,7 +2,11 @@
   <div class="col-md-8">
     <h2 class="mb-3">商品列表</h2>
     <div class="row">
-      <div v-for="product in props.products" class="col-md-4 mb-4">
+      <div
+        v-bind:key="id"
+        v-for="product in props.products"
+        class="col-md-4 mb-4"
+      >
         <div class="card h-100">
           <img :src="product.imgURL" />
           <div class="card-body">
@@ -24,7 +28,6 @@ import { inject } from "vue";
 
 const props = defineProps({
   products: { type: Array, required: true },
-  carts: { type: Array },
 });
 
 const emit = defineEmits(["add-carts"]);

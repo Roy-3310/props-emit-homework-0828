@@ -3,6 +3,7 @@
     <h2 class="mb-3">購物車</h2>
     <ul class="list-group mb-3">
       <li
+        v-bind:key="id"
         v-for="cart in carts"
         class="list-group-item d-flex justify-content-between align-items-center"
       >
